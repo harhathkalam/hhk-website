@@ -1,0 +1,186 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+    <!-- Breadcrumb Section -->
+    <div class="breadcrumb connect-breadcrumb" style = "background: url({% static 'images/Connect with us top image.png' %});">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcrumb-left">
+                        <img src="{% static 'images/Home/yellow stroke.png' %}" alt="">
+                        <h1>Connect With Us</h1>
+                        <h3><a href="{% url 'home:homepage' %}">Home</a> - Connect With Us</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Volunteer Section -->
+    <section class="join-the-community volunteer-team team-members volunteer-section padding-top-85 padding-bottom-85">
+        <div class="container vector-container">
+            <img src="{% static 'images/connectwithus/IMG 3.png' %}" class="image-1" alt="">
+            <img src="{% static 'images/connectwithus/IMG 1.png' %}" class="image-2" alt="">
+            <img src="{% static 'images/connectwithus/IMG 2.png' %}" class="image-3" alt="">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="title text-center margin-bottom-55">
+                        <h2>Join the Community</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p>You are a star, <img src = "{% static 'images/connectwithus/IMG 4.png' %}"><br> and if you believe your values and passion align <br> with ours, <br>Come and Join our Constellation!!!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class = "padding-bottom-40 font-Purisa">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-6 mb-3">
+                    <h2 class = "my-3 orange-heading">Volunteer With Us</h2>
+                    <p>You can make a difference if you<br> want to! If you believe in this,<br> come and volunteer with us!.<br> No specific skills are required, all<br> you need to have is the will and<br> time to learn and unlearn and explore. </p>
+                    <a href="https://bit.ly/joinhhk" target = "_blank" class = "custom-btn">Fill this Form</a>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <h2 class = "my-3  orange-heading">Become a supporter</h2>
+                    <p>In order to sustain the cause and its<br> journey, you can join and support by<br> contributing a fixed amount every<br> month or a one time contribution to<br> cover kids' expenses and overall<br> organizational expenses!</p>
+                    <a href = "#" class = "custom-btn">Donation Portal</a>
+                </div>
+
+                <div class="col-md-6 mb-3">
+                    <h2 class = "my-3 orange-heading">Join Our Team</h2>
+                    <p>We are always looking out for like-hearted<br>people who believe in creating<br>safe and joyous spaces for kids<br>through alternative education practices.<br>If you are such an individual and want<br>to join our on-ground team,<br>write to us at:<br> info@harhathkalam.org</p>
+                    <a href = "mailto:info@harhathkalam.org" class = "custom-btn">Send Mail</a>
+                </div>
+
+                <div class="col-md-6 mb-3">
+                    <h2 class = "my-3 orange-heading">Collaborate With Us</h2>
+                    <p>If you are a fellow<br> organisation / company / individual who<br> wants to collaborate on a program,<br>Write to us at our offical email id:<br> info@harhathkalam.org</p>
+                    <a href = "mailto:info@harhathkalam.org" class = "custom-btn">Send Mail</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="volunteer-slider team-members-slider padding-top-30 padding-bottom-30">
+        
+        <div class="main-container vector-container">
+            <img src="{% static 'images/heart-vector.png' %}" class="heart-vector" alt="">
+            <img src="{% static 'images/hand-vector.png' %}" class="hand-vector" alt="">
+            <div class="container">
+                <div class="slider-content">
+                    <div class="row">
+                        <div class="col-lg-7">
+                            <div class="title margin-bottom-30">
+                                <h2>People say about charity</h2>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="client-slider">
+                                <div class="single-slide">
+                                    <span class="quote"><i class="fas fa-quote-right"></i></span>
+                                    <div class="client-img">
+                                        <img src="{% static 'images/client-pic.png' %}" alt="">
+                                    </div>
+                                    <div class="client-content">
+                                        <h5>Tanmoy Khan || UI/UX Designer</h5>
+                                        <h3>Help Children Water pollution and Human Health</h3>
+                                        <span class="donate-amount">Doante Amount : 50000K USD</span>
+                                        <span class="slider-btn">Environment</span>
+                                        <p>By organizing an event in aid of Sympatho - whether it be big or small - you
+                                            will be giving children in Bangladesh the opportunity to break out of the
+                                            poverty. </p>
+
+                                    </div>
+                                </div>
+                                <div class="single-slide">
+                                    <span class="quote"><i class="fas fa-quote-right"></i></span>
+                                    <div class="client-img">
+                                        <img src="{% static 'images/slider-female.png' %}" alt="">
+                                    </div>
+                                    <div class="client-content">
+                                        <h5>Tanmoy Khan || UI/UX Designer</h5>
+                                        <h3>Help Children Water pollution and Human Health</h3>
+                                        <span class="donate-amount">Doante Amount : 50000K USD</span>
+                                        <span class="slider-btn">Education</span>
+                                        <p>By organizing an event in aid of Sympatho - whether it be big or small - you
+                                            will be giving children in Bangladesh the opportunity to break out of the
+                                            poverty. </p>
+
+                                    </div>
+                                </div>
+                                <div class="single-slide">
+                                    <span class="quote"><i class="fas fa-quote-right"></i></span>
+                                    <div class="client-img">
+                                        <img src="{% static 'images/client-pic.png' %}" alt="">
+                                    </div>
+                                    <div class="client-content">
+                                        <h5>Tanmoy Khan || UI/UX Designer</h5>
+                                        <h3>Help Children Water pollution and Human Health</h3>
+                                        <span class="donate-amount">Doante Amount : 50000K USD</span>
+                                        <span class="slider-btn">Environment</span>
+                                        <p>By organizing an event in aid of Sympatho - whether it be big or small - you
+                                            will be giving children in Bangladesh the opportunity to break out of the
+                                            poverty. </p>
+
+                                    </div>
+                                </div>
+                                <div class="single-slide">
+                                    <span class="quote"><i class="fas fa-quote-right"></i></span>
+                                    <div class="client-img">
+                                        <img src="{% static 'images/slider-female.png' %}" alt="">
+                                    </div>
+                                    <div class="client-content">
+                                        <h5>Tanmoy Khan || UI/UX Designer</h5>
+                                        <h3>Help Children Water pollution and Human Health</h3>
+                                        <span class="donate-amount">Doante Amount : 50000K USD</span>
+                                        <span class="slider-btn">Education</span>
+                                        <p>By organizing an event in aid of Sympatho - whether it be big or small - you
+                                            will be giving children in Bangladesh the opportunity to break out of the
+                                            poverty. </p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class = "collaboration padding-top-40 padding-bottom-40">
+        <div class="container">
+            <div class="row">
+                   
+                <div class="col-lg-12">
+                    <div class="brands">
+                        <h2 class=" margin-bottom-30 blue-heading text-center" >Collaboration</h2>
+                        <div class="row brands-carousel">
+                            <div class="text-center">
+                                <img src="{% static 'images/collaboration/CL LOGO.png' %}" alt="">
+                            </div>
+                            <div class="text-center">
+                                <img src="{% static 'images/collaboration/haqdarshak.jpeg' %}" alt="">
+                            </div>
+                            <div class="text-center">
+                                <img src="{% static 'images/collaboration/Logo-GOONJ.png' %}" alt="">
+                            </div>
+                            <div class="text-center">
+                                <img src="{% static 'images/collaboration/oorjaa.jpeg' %}" alt="">
+                            </div>
+
+                            <div class="text-center">
+                                <img src="{% static 'images/collaboration/Pravah Logo.png' %}" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}

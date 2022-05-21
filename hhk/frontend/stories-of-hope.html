@@ -1,0 +1,162 @@
+
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+    <!-- Breadcrumb Section -->
+    <div class="breadcrumb connect-breadcrumb blog-breadcrumb">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcrumb-left">
+                        <img src="{% static 'images/Home/yellow stroke.png' %}" alt="">
+                        <h1>Stories of Hope</h1>
+                        <h3><a href="{% url 'home:homepage'%}">Home</a> - Stories of Hope</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Blog Content Section -->
+    <section class="blog-content-section padding-top-50 padding-bottom-50">
+        <div class="container">
+            <h2 class = "blue-heading text-center">Stories of Hope</h2>
+            <div class="row  blog-div ">
+                <div class="col-md-6 blog-img-container">
+                    <img src="{% static 'images/image.png' %}" alt="" class = "" style = "height: auto; width: 90%;">
+                </div>
+
+                <div class="col-md-6 blog-content-div">
+                    <h3>Story Title</h3>
+                    <div class="row mt-3">
+                        <div class="col-6 text-center">
+                            <p><a href="#"><i class="fa fa-calendar"></i> 28 june 2020</a></p>
+                        </div>
+
+                        <div class="col-6 text-center">
+                            <p><a href="#"><i class="fa fa-user-circle"></i> Arpit, Volunteer</a></p>
+                        </div>
+                    </div>
+                   
+                    <!-- <span class = "ml-3"><i>Written by - Arpit, Volunteer</i></span> -->
+                    <p>One of the things that I enjoyed most during my HHK journey was our reflection and brainstorming sessions.</p>
+                    <p>I vividly remember during one such session, we were seating in Thapar's library canteen and trying to figure out a way how to make the education curriculum more fun for kids, what is the things that kids will enjoy.</p>
+                    <p>Then suddenly it occurred to us, whatever we remember till now, we remember due to stories, every moral teaching we had we were given through stories, stories are something which connects us to each other, stories are something which we pass on to others, stories are something which everyone remembers so why not create everything in form of stories.
+                    </p>
+                    <p>It felt like the final piece of the puzzle which we were trying to solve, it somehow connected everything, and I guess that's what stories are for. So yes this is one of the many moments, which will always stay with me 😄</p>
+                </div>
+               
+            </div>
+
+            <div class="row  blog-div ">
+                <div class="col-md-6 blog-img-container">
+                    <img src="{% static 'images/story-2.webp' %}" alt="">
+                </div>
+
+                <div class="col-md-6 blog-content-div">
+                    <h3>Story Title</h3>
+                    <!-- <span class = "ml-3"><i>Written by - Aashima,Volunteer</i></span> -->
+                    <div class="row mt-3">
+                        <div class="col-6 text-center">
+                            <p><a href="#"><i class="fa fa-calendar"></i> 28 june 2020</a></p>
+                        </div>
+
+                        <div class="col-6 text-center">
+                            <p><a href="#"><i class="fa fa-user-circle"></i> Aashima, Volunteer</a></p>
+                        </div>
+                    </div>
+                    <p>"aisi rango bhari apni duniya hai kyun, aise bhi socho na!"
+                        Now I have a beautiful memory attached to this song. The moment when I just had a big fat smile on my face and yet some tears in my eyes. Well, it was a routine day in the summer camp. Children were dancing to their favorite song. Then I see this little toddler Rudra, so happy as if every nerve in his body is being tickled! It might be a usual day in his life or a usual day at the summer camp. But I, for a change, realized this after a long while that how simple it is find joy in little things. I am thankful.</p>
+                </div>
+               
+            </div>
+            <div class="blog-pagination mt-5 text-center">
+                <ul class="pagination">
+                    <li><a href="#"><i class="fas fa-angle-left"></i></a></li>
+                    <li><a href="#" class="active">01</a></li>
+                    <li><a href="#">02</a></li>
+                    <li><a href="#">03</a></li>
+                    <li><a href="#">04</a></li>
+                    <li><a href="#">...</a></li>
+                    <li><a href="#"><i class="fas fa-angle-right"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+   
+
+
+    <section class="program campaign-section home1-cp padding-top-40 padding-bottom-40">
+        <div class="container">
+            <div class="campaign-title">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="title text-center">
+                            <h2 class = "orange-heading" style = "font-size: 50px;">Learning Diaries</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="campaign-content">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="campaign-column">
+                            <!-- <a href="#"><span class="img-top-btn">Health</span></a> -->
+                            <div class="img-container">
+                                <a href="{%url 'home:donation' %}"><img src="{% static 'images/Home/IMG-20210224-WA0008.jpg' %}" alt=""></a>
+                            </div>
+                            <div class="padding-20">
+                               
+                                <a href="{%url 'home:donation' %}">
+                                    <h3>Jim, Finance Stack</h3>
+                                </a>
+                                <div class="campaign-column-bottom">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta nisi esse quam iusto, sed molestias dolore consequatur quibusdam nulla voluptates, natus at officiis ratione sapiente. Odio quibusdam non laborum cum.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="campaign-column">
+                            <!-- <a href="#"><span class="img-top-btn">Health</span></a> -->
+                            <div class="img-container">
+                                <a href="{%url 'home:donation' %}"><img src="{% static 'images/Home/WhatsApp Image 2021-06-15 at 19.13.45 (2).jpeg' %}" alt=""></a>
+                            </div>
+                            <div class="padding-20">
+                               
+                                <a href="{%url 'home:donation' %}">
+                                    <h3>Addison Craven</h3>
+                                </a>
+                                <div class="campaign-column-bottom">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut iusto id eveniet dicta doloribus voluptatum eaque necessitatibus dignissimos provident nihil neque, exercitationem sit itaque ab delectus repellendus quia obcaecati harum?</p>
+                                </div>
+                               
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-6">
+                        <div class="campaign-column">
+                            <!-- <a href="#"><span class="img-top-btn">Health</span></a> -->
+                            <div class="img-container">
+                                <a href="{%url 'home:donation' %}"><img src="{% static 'images/Home/IMG-20210216-WA0029.jpg' %}" alt=""></a>
+                            </div>
+                            <div class="padding-20">
+                               
+                                <a href="{%url 'home:donation' %}">
+                                    <h3>Joelle Chan-Lee</h3>
+                                </a>
+                                <div class="campaign-column-bottom">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde et ipsum ad ipsa provident id fugit, explicabo dicta consequatur illo placeat deleniti labore. Non quaerat tempora cumque libero voluptatibus totam.</p>
+                                </div>
+                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}

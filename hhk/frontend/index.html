@@ -1,0 +1,534 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+    <!-- Hero Slider -->
+    <div class="hero-slider">
+        <div class="hero-single-slide" style="background-image:url({% static 'images/Home/IMG-20210207-WA0000.jpg' %})">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-right col-md-12 col-sm-12">
+                        <div class="slide-left-content">
+                            <img src="{% static 'images/Home/yellow stroke.png' %}" alt="">
+                        
+                            <span class = "text-white">Our first</span>
+                            <h1 class="title margin-bottom-25" style ="color: #165b92">Community <br>Learning Center</h1>
+                            <p class="margin-bottom-25">built, designed, and maintained <br>by the Community, for the community</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-single-slide" style="background-image:url({% static 'images/Home/WhatsApp Image 2021-06-15 at 10.54.40.jpeg' %})">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-right col-md-12 col-sm-12">
+                        <div class="slide-left-content">
+                            <img src="{% static 'images/Home/blue stroke.png' %}" alt="">
+                            <span class = "text-white">Enabling</span>
+                            <h1 class="title margin-bottom-25" style = "color: #ffbd59;">Safe<br> spaces</h1>
+                            <p class="margin-bottom-25">for kids where they have agency to explore <br> and create meaningful life journeys</p>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+
+        <div class="hero-single-slide" style="background-image:url({% static 'images/Home/Obj 3.jpg' %})">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-right col-md-12 col-sm-12 ">
+                        <div class="slide-left-content">
+                            <img src="{% static 'images/Home/yellow stroke.png' %}" alt="">
+                            
+                            <span class = "text-white">Creating</span>
+                            <h1 class="title margin-bottom-25" style ="color: #165b92">Sustainable <br>Communities</h1>
+                            <p class="margin-bottom-25">that can take care of their issues through
+                                <br> dialogue, collaboration and mindfulness.</p>
+                            
+                        </div>
+                    </div>
+                </div>
+
+               
+            </div>
+        </div>
+    </div>
+
+
+
+    <!--Mission-->
+    <section class="our-vision  padding-top-40 padding-bottom-70">
+        <div class="container">
+            <h2 class="text-center blue-heading mb-4">Our Vision <img src = "{% static 'images/graphics/vision.png' %}" class = "below-heading"></h2>
+            <img src="{% static 'images/Home/vision 1.png' %}" alt="" class = "vision-img1 ">
+            <img src="{% static 'images/Home/vision 2.png' %}" alt="" class = "vision-img2 ">
+            <img src="{% static 'images/Home/vision 3.png' %}" alt="" class = "vision-img3 ">
+            <img src="{% static 'images/Home/vision 4.png' %}" alt="" class = "vision-img4 ">
+            <div class="row ">
+                <div class="col-lg-12 text-center">
+                    <p >To initiate &amp; nurture<br> inclusive &amp; meaningful learning spaces <br>towards self-reliance &amp; sustainability.</p>
+                </div>
+               
+            </div>
+        </div>
+    </section>
+
+    <!-- Campaign Blog -->
+    <section class="campaign-section home1-cp padding-top-40 padding-bottom-40">
+        <div class="container">
+            <div class="campaign-title">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="title  text-center inbox-image-2">
+                            <h2 class = "blue-heading">Stories of Hope</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="campaign-content stories-index">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="campaign-column">
+                            <!-- <a href="#"><span class="img-top-btn">Health</span></a> -->
+                            <div class="img-container">
+                                <a href="{% url 'home:stories-of-hope'%}"><img src="{% static 'images/image.webp' %}" height = "300px" alt=""></a>
+                            </div>
+                            <div class="padding-20">
+                                <!-- <div class="animated-progress-bar">
+                                    <div class="animated-progress" data-percent="50" data-color="rgba(0, 74, 173, 0.9)">
+                                        <span>50%</span>
+                                    </div>
+                                </div> -->
+                                <a href="{% url 'home:stories-of-hope'%}">
+                                    <h3>Story 1</h3>
+                                </a>
+
+                                <p>One of the things that I enjoyed most during my HHK journey was our reflection and brainstorming sessions.</p>
+                                <!-- <div class="campaign-column-bottom">
+                                    <span>Goal: 20000k</span>
+                                    <span>Need: 5000k</span>
+                                    <span>Donate: 50k</span>
+                                </div> -->
+                                <a href="{% url 'home:stories-of-hope'%}" class="readmore-btn">read more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="campaign-column">
+                            <!-- <a href="#"><span class="img-top-btn">Water</span></a> -->
+                            <div class="img-container">
+                                <a href="{% url 'home:stories-of-hope'%}"><img src="{% static 'images/story-2.webp' %}" height = "300px" alt=""></a>
+                            </div>
+                            <div class="padding-20">
+                                <!-- <div class="animated-progress-bar">
+                                    <div class="animated-progress" data-percent="70" data-color="rgba(0, 74, 173, 0.9)">
+                                        <span>70%</span>
+                                    </div>
+                                </div> -->
+                                <a href="{% url 'home:stories-of-hope'%}">
+                                    <h3>Story 2</h3>
+                                </a>
+                                <!-- <div class="campaign-column-bottom">
+                                    <span>Goal: 20000k</span>
+                                    <span>Need: 5000k</span>
+                                    <span>Donate: 50k</span>
+                                </div> -->
+                                <p>"aisi rango bhari apni duniya hai kyun, aise bhi socho na!" Now I have a beautiful memory attached to this song.</p>
+                                <a href="{% url 'home:stories-of-hope'%}" class="readmore-btn">read more</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="campaign-column">
+                            <!-- <a href="#"><span class="img-top-btn">Water</span></a> -->
+                            <div class="img-container">
+                                <a href="{% url 'home:stories-of-hope'%}"><img src="{% static 'images/image.webp' %}" height = "300px" alt=""></a>
+                            </div>
+                            <div class="padding-20">
+                                <!-- <div class="animated-progress-bar">
+                                    <div class="animated-progress" data-percent="70" data-color="rgba(0, 74, 173, 0.9)">
+                                        <span>70%</span>
+                                    </div>
+                                </div> -->
+                                <a href="{% url 'home:stories-of-hope'%}">
+                                    <h3>Story 3</h3>
+                                </a>
+                                <!-- <div class="campaign-column-bottom">
+                                    <span>Goal: 20000k</span>
+                                    <span>Need: 5000k</span>
+                                    <span>Donate: 50k</span>
+                                </div> -->
+                                <p>"aisi rango bhari apni duniya hai kyun, aise bhi socho na!" Now I have a beautiful memory attached to this song.</p>
+                                <a href="{% url 'home:stories-of-hope'%}" class="readmore-btn">read more</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="program campaign-section home1-cp padding-top-40 padding-bottom-40">
+        <div class="container">
+            <div class="campaign-title">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="title text-center inbox-image-3">
+                            <h2 class = "blue-heading">Our Programs 
+                                <!-- <img src="/assets/images/graphics/program.png" alt=""> -->
+                                </h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="campaign-content">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6">
+                        <div class="campaign-column">
+                            <!-- <a href="#"><span class="img-top-btn">Health</span></a> -->
+                            <div class="img-container">
+                                <a href="{% url 'home:our-programs' %}"><img src="{% static 'images/Home/IMG-20210224-WA0008.jpg' %}" alt=""></a>
+                            </div>
+                            <div class="padding-20">
+                               
+                                <a href="{% url 'home:our-programs' %}">
+                                    <h3>Safe space program</h3>
+                                </a>
+                                <div class="campaign-column-bottom">
+                                    <p>Creating a safe space for the children which caters to the literacy and emotional needs of the kids is one of the firt things of the intervention. A space that would spell continuity and consistency untouched by the vagaries of weather..</p>
+                                </div>
+                                <a href="{% url 'home:our-programs' %}" class="readmore-btn">read more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="campaign-column">
+                            <!-- <a href="#"><span class="img-top-btn">Health</span></a> -->
+                            <div class="img-container">
+                                <a href="{% url 'home:our-programs' %}"><img src="{% static 'images/Home/WhatsApp Image 2021-06-15 at 19.13.45 (2).jpeg' %}" alt=""></a>
+                            </div>
+                            <div class="padding-20">
+                               
+                                <a href="{% url 'home:our-programs' %}">
+                                    <h3>Women Engagement Program</h3>
+                                </a>
+                                <div class="campaign-column-bottom">
+                                    <p>While working with communities, women and young girls of the Basti have come up with a need to learn certain life skills, STITCHING being one of them.  Hence a journey began to curate a program that enables a safe space for the...</p>
+                                </div>
+                                <a href="{% url 'home:our-programs' %}" class="readmore-btn">read more</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-6 col-md-6">
+                        <div class="campaign-column">
+                            <!-- <a href="#"><span class="img-top-btn">Health</span></a> -->
+                            <div class="img-container">
+                                <a href="{% url 'home:our-programs' %}"><img src="{% static 'images/Home/IMG-20210216-WA0029.jpg' %}" alt=""></a>
+                            </div>
+                            <div class="padding-20">
+                               
+                                <a href="{% url 'home:our-programs' %}">
+                                    <h3>Adult Literacy Programme</h3>
+                                </a>
+                                <div class="campaign-column-bottom">
+                                    <p>Learning does not happen only in
+                                        schools, and with this ideology, the
+                                        idea of creating a safe space for all
+                                        those children who have left schools
+                                        or are unable to go to school due to
+                                        many circumstances was extended.
+                                        Learning will focus on life skills,
+                                        social-emotional ......</p>
+                                </div>
+                                <a href="{% url 'home:our-programs' %}" class="readmore-btn">read more</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-lg-6 col-md-6">
+                        <div class="campaign-column">
+                            <!-- <a href="#"><span class="img-top-btn">Health</span></a> -->
+                            <div class="img-container">
+                                <a href="{% url 'home:our-programs' %}"><img src="{% static 'images/Home/Obj 3.jpg' %}" alt=""></a>
+                            </div>
+                            <div class="padding-20">
+                               
+                                <a href="{% url 'home:our-programs' %}">
+                                    <h3>Community Intervention
+                                        Programme</h3>
+                                </a>
+                                <div class="campaign-column-bottom">
+                                    <p>or a self-sustaining safe space for
+                                        kids, it's important to include the
+                                        whole community in the
+                                        transformation. Hence, a community
+                                        intervention program comes up as an
+                                        important part of the process. It
+                                        includes ensuring the convergence of
+                                        services ... </p>
+                                </div>
+                                <a href="{% url 'home:our-programs' %}" class="readmore-btn">read more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="community">
+        <div class="container">
+            <div class="inbox-image">
+                <h2 class="text-center dotted-border blue-heading">Join the Community</h2>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-6 col-12 mt-5">
+                    <div class = "row">
+                        <div class = "col-md-4">
+                            <img src="{% static 'images/Home/join - volunteer.png' %}" alt="">
+                        </div>
+
+                        <div class = "col-md-8">
+                            <h3 class = "orange-heading">Volunteer with us</h3>
+                            <p class = "black-p">Join our community by volunteering wiht us! Fill the form and apply for suitable role for you.</p>
+                            <a href = "https://bit.ly/joinhhk" class = "custom-btn" target = "_blank">Fill the Form</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-12 mt-5">
+                    <div class = "row">
+                        <div class = "col-md-4">
+                            <img src="{% static 'images/Home/join - donate.png' %}" alt="">
+                        </div>
+
+                        <div class = "col-md-8">
+                            <h3 class = "orange-heading">Make Your Contribution</h3>
+                            <p class = "black-p">Support the cause by making a contribution from your side.</p>
+                            <a href = "#" class = "custom-btn">Contribute</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-12 mt-5">
+                    <div class = "row">
+                        <div class = "col-md-4">
+                            <img src="{% static 'images/Home/join - join.png' %}" alt="">
+                        </div>
+
+                        <div class = "col-md-8">
+                            <h3 class = "orange-heading">Join our Team</h3>
+                            <p class = "black-p">If you feel you want to join our team of like-hearted learners, apply by sending your resume via mail.</p>
+                            <a href = "mailto:info@harhathkalam.org" class = "custom-btn">Send Mail</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-12 mt-5">
+                    <div class = "row">
+                        <div class = "col-md-4">
+                            <img src="{% static 'images/Home/join - collaborate.png' %}" alt="">
+                        </div>
+
+                        <div class = "col-md-8">
+                            <h3 class = "orange-heading">Collaborate</h3>
+                            <p class = "black-p">If you are a fellow organisation or company and want to collaborate for a program, write to us.</p>
+                            <a href = "mailto:info@harhathkalam.org" class = "custom-btn">Send Mail</a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+   
+   
+
+    <!-- Project List -->
+    <section class="project-list home-project-list padding-top-40">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="title">
+                        <h2 class = "blue-heading text-center"><img src="{% static 'images/graphics/gallery.png' %}" alt="" class="heading-img"> Gallery </h2>
+                    </div>
+                </div>
+                
+                <div class="col-lg-12">
+                    <div class="row grid">
+                        <div class="col-lg-6 col-md-6 grid-item education">
+                            <div class="messonry-img" style="background-image: url({% static 'images/grid-1.png' %});">
+                                <div class="describe">
+                                    <div class="project-gallery">
+                                        <a href="{% static 'images/grid-1.png' %}" alt="" class="p-gallery-img open-gallery"><i
+                                                class="far fa-images"></i></a>
+                                        <a href="{% static 'images/grid-2.png' %}" alt="" class="p-gallery-img"></a>
+                                        <a href="{% static 'images/grid-3.png' %}" alt="" class="p-gallery-img"></a>
+                                        <a href="{% static 'images/grid-4.png' %}" alt="" class="p-gallery-img"></a>
+                                        <a href="{% static 'images/grid-5.png'%}" alt="" class="p-gallery-img"></a>
+                                        <a href="{% static 'images/grid-6.png' %}" alt="" class="p-gallery-img"></a>
+                                    </div>
+                                    <div class="content">
+                                        <a href="project-single.html"><span>Water</span></a>
+                                        <a href="project-single.html">
+                                            <h4>Together we can beat poverty</h4>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 grid-item water">
+                            <div class="messonry-img" style="background-image: url({% static 'images/grid-2.png'%});">
+                                <div class="describe">
+                                    <div class="project-gallery">
+                                        <a href="{% static 'images/grid-1.png' %}" alt="" class="p-gallery-img"></a>
+                                        <a href="{% static 'images/grid-2.png' %}" alt="" class="p-gallery-img open-gallery"><i
+                                                class="far fa-images"></i></a>
+                                        <a href="{% static 'images/grid-3.png' %}" alt="" class="p-gallery-img"></a>
+                                        <a href="{% static 'images/grid-4.png' %}" alt="" class="p-gallery-img"></a>
+                                        <a href="{% static 'images/grid-5.png' %}" alt="" class="p-gallery-img"></a>
+                                        <a href="{% static 'images/grid-6.png' %}" alt="" class="p-gallery-img"></a>
+                                    </div>
+                                    <div class="content">
+                                        <a href="project-single.html"><span>Water</span></a>
+                                        <a href="project-single.html">
+                                            <h4>Together we can beat poverty</h4>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 grid-item environment">
+                            <div class="messonry-img" style="background-image: url({% static 'images/grid-3.png' %});">
+                                <div class="describe">
+                                    <div class="project-gallery">
+                                        <a href="{% static 'images/grid-1.png' %}" alt="" class="p-gallery-img"></a>
+                                        <a href="{%  static 'images/grid-2.png' %}" alt="" class="p-gallery-img"></a>
+                                        <a href="{% static 'images/grid-3.png' %}" alt="" class="p-gallery-img open-gallery"><i
+                                                class="far fa-images"></i></a>
+                                        <a href="{% static 'images/grid-4.png' %}" alt="" class="p-gallery-img"></a>
+                                        <a href="{% static 'images/grid-5.png' %}" alt="" class="p-gallery-img"></a>
+                                        <a href="{% static 'images/grid-6.png' %}" alt="" class="p-gallery-img"></a>
+                                    </div>
+                                    <div class="content">
+                                        <a href="project-single.html"><span>Water</span></a>
+                                        <a href="project-single.html">
+                                            <h4>Together we can beat poverty</h4>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 grid-item health">
+                            <div class="messonry-img" style="background-image: url({% static 'images/grid-4.png' %});">
+                                <div class="describe">
+                                    <div class="project-gallery">
+                                        <a href="{% static 'images/grid-1.png' %}" alt="" class="p-gallery-img"></a>
+                                        <a href="{% static 'images/grid-2.png' %}" alt="" class="p-gallery-img"></a>
+                                        <a href="{% static 'images/grid-3.png' %}" alt="" class="p-gallery-img"></a>
+                                        <a href="{% static 'images/grid-4.png' %}" alt="" class="p-gallery-img open-gallery"><i
+                                                class="far fa-images"></i></a>
+                                        <a href="{% static 'images/grid-5.png' %}" alt="" class="p-gallery-img"></a>
+                                        <a href="{% static 'images/grid-6.png' %}" alt="" class="p-gallery-img"></a>
+                                    </div>
+                                    <div class="content">
+                                        <a href="project-single.html"><span>Water</span></a>
+                                        <a href="project-single.html">
+                                            <h4>Together we can beat poverty</h4>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 grid-item environment">
+                            <div class="messonry-img" style="background-image: url({% static 'images/grid-5.png' %});">
+                                <div class="describe">
+                                    <div class="project-gallery">
+                                        <a href="{% static 'images/grid-1.png' %}" alt="" class="p-gallery-img"></a>
+                                        <a href="{% static 'images/grid-2.png' %}" alt="" class="p-gallery-img"></a>
+                                        <a href="{% static 'images/grid-3.png' %}" alt="" class="p-gallery-img"></a>
+                                        <a href="{% static 'images/grid-4.png' %}" alt="" class="p-gallery-img"></a>
+                                        <a href="{% static 'images/grid-5.png' %}" alt="" class="p-gallery-img open-gallery"><i
+                                                class="far fa-images"></i></a>
+                                        <a href="{% static 'images/grid-6.png' %}" alt="" class="p-gallery-img"></a>
+                                    </div>
+                                    <div class="content">
+                                        <a href="project-single.html"><span>Water</span></a>
+                                        <a href="project-single.html">
+                                            <h4>Together we can beat poverty</h4>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 grid-item water">
+                            <div class="messonry-img" style="background-image: url({% static 'images/grid-6.png' %});">
+                                <div class="describe">
+                                    <div class="project-gallery">
+                                        <a href="{% static 'images/grid-1.png' %}" alt="" class="p-gallery-img"></a>
+                                        <a href="{% static 'images/grid-2.png' %}" alt="" class="p-gallery-img"></a>
+                                        <a href="{% static 'images/grid-3.png' %}" alt="" class="p-gallery-img"></a>
+                                        <a href="{% static 'images/grid-4.png' %}" alt="" class="p-gallery-img"></a>
+                                        <a href="{% static 'images/grid-5.png' %}" alt="" class="p-gallery-img"></a>
+                                        <a href="{% static 'images/grid-6.png' %}" alt="" class="p-gallery-img open-gallery"><i
+                                                class="far fa-images"></i></a>
+                                    </div>
+                                    <div class="content">
+                                        <a href="project-single.html"><span>Water</span></a>
+                                        <a href="project-single.html">
+                                            <h4>Together we can beat poverty</h4>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+  
+
+    
+    <section class = "collaboration padding-top-40 padding-bottom-40">
+        <div class="container">
+            <div class="row">
+                   
+                <div class="col-lg-12">
+                    <div class="brands">
+                        <h2 class=" margin-bottom-30 blue-heading text-center" >Collaboration</h2>
+                        <div class="row brands-carousel">
+                            <div class="text-center">
+                                <img src="{% static 'images/collaboration/CL LOGO.png' %}" alt="">
+                            </div>
+                            <div class="text-center">
+                                <img src="{% static 'images/collaboration/haqdarshak.jpeg' %}" alt="">
+                            </div>
+                            <div class="text-center">
+                                <img src="{% static 'images/collaboration/Logo-GOONJ.png' %}" alt="">
+                            </div>
+                            <div class="text-center">
+                                <img src="{% static 'images/collaboration/oorjaa.jpeg' %}" alt="">
+                            </div>
+
+                            <div class="text-center">
+                                <img src="{% static 'images/collaboration/Pravah Logo.png' %}" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+  
+{% endblock %}
+   
